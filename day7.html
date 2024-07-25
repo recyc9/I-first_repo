@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1, h2, h3 {
+            color: #00698f;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        code {
+            background: #f9f9f9;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data Definition Language (DDL)</h1>
+    <p>Data Definition Language (DDL) is a subset of SQL (Structured Query Language) used to define and manage database schema. DDL commands are essential for creating, modifying, and deleting database structures, such as tables, indexes, and views. Unlike DML (Data Manipulation Language), which deals with the manipulation of data within these structures, DDL focuses on the schema or structure itself.</p>
+
+    <h2>Key DDL Commands</h2>
+    <h3>CREATE:</h3>
+    <p>Used to create database objects such as tables, indexes, views, and databases.</p>
+    <p><strong>Example:</strong></p>
+    <p>Creating an "employees" table with columns for employee ID, first name, last name, and hire date.</p>
+
+    <h3>ALTER:</h3>
+    <p>Used to modify an existing database object.</p>
+    <p><strong>Examples:</strong></p>
+    <ul>
+        <li>Adding a new column to a table.</li>
+        <li>Modifying the datatype of an existing column.</li>
+        <li>Dropping a column from a table.</li>
+    </ul>
+
+    <h3>DROP:</h3>
+    <p>Used to delete database objects.</p>
+    <p><strong>Example:</strong></p>
+    <p>Dropping the "employees" table permanently removes the table and its data.</p>
+
+    <h3>TRUNCATE:</h3>
+    <p>Used to remove all records from a table but keeps the table structure for future use.</p>
+    <p><strong>Example:</strong></p>
+    <p>Truncating the "employees" table removes all rows but retains the table for future data insertion.</p>
+
+    <h3>RENAME:</h3>
+    <p>Used to rename database objects.</p>
+    <p><strong>Example:</strong></p>
+    <p>Renaming the "employees" table to "staff".</p>
+
+    <h3>COMMENT:</h3>
+    <p>Used to add comments to the data dictionary.</p>
+    <p><strong>Examples:</strong></p>
+    <ul>
+        <li>Adding a comment to a table.</li>
+        <li>Adding a comment to a column in a table.</li>
+    </ul>
+
+    <h2>Characteristics of DDL Commands</h2>
+    <h3>Autocommit:</h3>
+    <p>DDL commands execute with an implicit commit, meaning changes are automatically saved and cannot be rolled back.</p>
+
+    <h3>Schema Management:</h3>
+    <p>These commands are fundamental for managing the schema of the database, ensuring that structures are defined before data manipulation.</p>
+
+    <h3>Integrity Constraints:</h3>
+    <p>DDL commands can define constraints such as PRIMARY KEY, FOREIGN KEY, UNIQUE, CHECK, and NOT NULL to enforce data integrity and consistency.</p>
+</body>
+</html>

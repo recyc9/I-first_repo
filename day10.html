@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Relations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1, h2, h3 {
+            color: #00698f;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>What is Relation in Database?</h1>
+    <p>The term relation is sometimes used to refer to a table in a relational database. However, it is more often used to describe the relationships that exist between the tables in a relational database. A relationship between two database tables presupposes that one of them has a foreign key that references the primary key of another table.</p>
+
+    <h2>Types of Relationships in a Database</h2>
+    <p>There are 3 main types of relationships in a database:</p>
+    <ul>
+        <li>One-to-One</li>
+        <li>One-to-Many</li>
+        <li>Many-to-Many</li>
+    </ul>
+
+    <h3>Understanding the Types of Relationships Individually in Brief:</h3>
+
+    <h3>One-to-One</h3>
+    <p>In a one-to-one relationship, each record in one table is linked to a single record in another table, and vice versa. This type of relationship is not very common but is used when you need to split data into two tables for security, performance, or organizational reasons.</p>
+    <p><strong>Example:</strong> Employee table, etc.</p>
+
+    <h3>One-to-Many</h3>
+    <p>In a one-to-many relationship, a record in one table (the "one" side) can be related to one or more records in another table (the "many" side). This is the most common type of relationship in databases.</p>
+    <p><strong>Example:</strong> Customer Table, Orders Table, etc.</p>
+
+    <h3>Many-to-Many</h3>
+    <p>In a many-to-many relationship, multiple records in one table can be related to multiple records in another table. This type of relationship requires a junction table (also called a linking table or associative entity) to manage the relationships.</p>
+    <p><strong>Example:</strong> Students Table, Courses Table, etc.</p>
+
+    <p>Understanding these relationships and implementing them correctly in your database design ensures data integrity and enables complex queries and data manipulations.</p>
+</body>
+</html>

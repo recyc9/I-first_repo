@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Logical Operators</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1, h2, h3 {
+            color: #00698f;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        code {
+            background: #f9f9f9;
+            padding: 2px 4px;
+            border-radius: 4px;
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>SQL Logical Operators</h1>
+    <p>SQL logical operators are used to test for the truth of the condition. A logical operator, like the comparison operator, returns a boolean value of TRUE, FALSE, or UNKNOWN. Logical operators are used to combine or manipulate the conditions given in a query to retrieve or manipulate data. Here are some of the logical operators in SQL, such as OR and AND.</p>
+
+    <h2>Some of the Operators with Syntax</h2>
+
+    <h3>AND</h3>
+    <p>Selects records where both conditions are true.</p>
+    <code>SELECT * FROM EMPLOYEE WHERE SALARY < 10000 AND AGE > 25;</code>
+
+    <h3>OR</h3>
+    <p>Selects records where at least one of the conditions is true.</p>
+    <code>SELECT * FROM STUDENTS WHERE RANK > 20 OR MARKS > 600;</code>
+
+    <h3>NOT</h3>
+    <p>Selects records where the condition is not true.</p>
+    <code>SELECT * FROM EMP WHERE NOT SALARY = 10000;</code>
+
+    <h2>Ordering Operation</h2>
+
+    <h3>ASC</h3>
+    <p>Sorts the result set in ascending order.</p>
+    <code>SELECT * FROM EMP ORDER BY ID ASC;</code>
+
+    <h3>DESC</h3>
+    <p>Sorts the result set in descending order.</p>
+    <code>SELECT * FROM EMP ORDER BY ID DESC;</code>
+
+    <h2>Grouping Operation</h2>
+
+    <p>Groups rows that have the same values in specified columns into aggregate data.</p>
+    <code>SELECT FNAME, LNAME FROM EMP GROUP BY NAME;</code>
+
+    <h2>Aggregate Functions (Mathematical Operations)</h2>
+
+    <h3>AVERAGE</h3>
+    <code>SELECT AVG(SALARY) FROM EMP;</code>
+
+    <h3>MINIMUM</h3>
+    <code>SELECT MIN(SALARY) FROM EMP;</code>
+
+    <h3>MAXIMUM</h3>
+    <code>SELECT MAX(SALARY) FROM EMP;</code>
+
+    <h3>SUM</h3>
+    <code>SELECT SUM(SALARY) FROM EMP;</code>
+
+    <h3>COUNT</h3>
+    <code>SELECT COUNT(ID) FROM EMP;</code>
+
+    <h3>DISTINCT</h3>
+    <code>SELECT DISTINCT(NAME) FROM EMP;</code>
+
+    <h3>ROUND</h3>
+    <code>SELECT ROUND(MARKS, 2) FROM STUDENTS;</code>
+
+    <h2>String Functions (String Handling Functions)</h2>
+
+    <h3>LENGTH</h3>
+    <code>SELECT LEN('APPLE');</code>
+
+    <h3>REVERSE</h3>
+    <code>SELECT REVERSE('APPLE');</code>
+
+    <h3>REPLICATE</h3>
+    <code>SELECT REPLICATE('APPLE', 3);</code>
+
+    <h3>UPPERCASE</h3>
+    <code>SELECT UPPER('apple');</code>
+
+    <h3>LOWERCASE</h3>
+    <code>SELECT LOWER('APPLE');</code>
+
+    <h3>CONCATENATION</h3>
+    <code>SELECT CONCAT('NE', 'PA', 'L');</code>
+
+    <h3>LEFT MOST CHARACTER</h3>
+    <code>SELECT LEFT('APPLE', 3);</code>
+
+    <h3>RIGHT MOST CHARACTER</h3>
+    <code>SELECT RIGHT('APPLE', 3);</code>
+
+    <h2>Other Operators</h2>
+
+    <h3>IN</h3>
+    <p>Selects values within a given set of values.</p>
+    <code>SELECT ADDRESS FROM STD WHERE ADDRESS IN ('KTM', 'BIKE', 'PTN');</code>
+
+    <h3>BETWEEN</h3>
+    <p>Selects values within a given range.</p>
+    <code>SELECT SALARY FROM EMP WHERE SALARY BETWEEN 3000 AND 40000;</code>
+
+    <h3>PERCENTAGE</h3>
+    <p>Used with LIKE to search for a specified pattern in a column.</p>
+    <code>SELECT NAME FROM STD WHERE NAME LIKE '%a';</code>
+
+    <h3>UNDERSCORE</h3>
+    <p>Used with LIKE to search for a specified pattern in a column.</p>
+    <code>SELECT NAME FROM STD WHERE NAME LIKE '%__B';</code>
+
+    <h3>HAVING</h3>
+    <p>Used to filter records that meet the criteria after an aggregation.</p>
+    <code>SELECT NAME FROM STD WHERE GRADE = 'A' HAVING MARKS > 800;</code>
+
+    <p>These are some of the examples of logical operators for a quick review.</p>
+</body>
+</html>

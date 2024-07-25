@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1, h2, h3 {
+            color: #00698f;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        code {
+            background: #f9f9f9;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data Manipulation Language (DML)</h1>
+    <p>Data Manipulation Language (DML) is a subset of SQL (Structured Query Language) used to manage and manipulate data within database tables. DML commands are essential for retrieving, inserting, updating, and deleting data in a database. Unlike DDL (Data Definition Language), which focuses on the schema or structure of the database, DML deals with the data itself.</p>
+
+    <h2>Key DML Commands</h2>
+    <h3>SELECT:</h3>
+    <p>Used to retrieve data from one or more tables.</p>
+    <p><strong>Example:</strong></p>
+    <p>Selecting all columns from the "employees" table:</p>
+    <code>SELECT * FROM employees;</code>
+
+    <h3>INSERT:</h3>
+    <p>Used to add new rows of data to a table.</p>
+    <p><strong>Example:</strong></p>
+    <p>Inserting a new employee into the "employees" table:</p>
+    <code>INSERT INTO employees (employee_id, first_name, last_name, hire_date) VALUES (1, 'John', 'Doe', '2023-01-01');</code>
+
+    <h3>UPDATE:</h3>
+    <p>Used to modify existing data within a table.</p>
+    <p><strong>Example:</strong></p>
+    <p>Updating the last name of an employee with ID 1:</p>
+    <code>UPDATE employees SET last_name = 'Smith' WHERE employee_id = 1;</code>
+
+    <h3>DELETE:</h3>
+    <p>Used to remove rows of data from a table.</p>
+    <p><strong>Example:</strong></p>
+    <p>Deleting an employee with ID 1 from the "employees" table:</p>
+    <code>DELETE FROM employees WHERE employee_id = 1;</code>
+
+    <h2>Characteristics of DML Commands</h2>
+    <h3>Transactional:</h3>
+    <p>DML commands are transactional, meaning changes can be committed or rolled back to ensure data integrity.</p>
+
+    <h3>Data Manipulation:</h3>
+    <p>These commands are fundamental for manipulating data within the database, allowing for the insertion, update, and deletion of data as needed.</p>
+
+    <h3>Query Capabilities:</h3>
+    <p>DML provides powerful query capabilities to filter, sort, and retrieve specific data from the database.</p>
+</body>
+</html>

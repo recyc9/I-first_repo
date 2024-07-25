@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XAMPP Setup Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1, h2, h3 {
+            color: #00698f;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>XAMPP Setup Guide</h1>
+    <h2>Download XAMPP</h2>
+    <ul>
+        <li>Go to the official <a href="https://www.apachefriends.org/download.html">XAMPP website</a>.</li>
+        <li>Click on the download link for Windows to get the latest version of XAMPP.</li>
+    </ul>
+
+    <h2>Run the Installer</h2>
+    <ul>
+        <li>Locate the downloaded file and double-click it to start the installation process.</li>
+        <li>If prompted by User Account Control, click "Yes."</li>
+    </ul>
+
+    <h2>Select Components</h2>
+    <ul>
+        <li>Select the components you want to install. By default, all components are selected.</li>
+        <li>For a basic setup, you can keep the default selection, which includes Apache, MySQL, PHP, and phpMyAdmin.</li>
+    </ul>
+
+    <h2>Choose Installation Folder</h2>
+    <ul>
+        <li>Choose the folder where you want to install XAMPP. The default location is C:\xampp.</li>
+        <li>Click "Next."</li>
+    </ul>
+
+    <h2>Start the Installation</h2>
+    <ul>
+        <li>Click "Next" to start the installation process.</li>
+        <li>Wait for the installation to complete. This may take a few minutes.</li>
+    </ul>
+
+    <h2>Complete the Installation</h2>
+    <ul>
+        <li>Once the installation is complete, click "Finish."</li>
+        <li>You can choose to start the XAMPP Control Panel immediately.</li>
+    </ul>
+
+    <h2>Open XAMPP Control Panel</h2>
+    <ul>
+        <li>Open the XAMPP Control Panel from the start menu or desktop shortcut.</li>
+        <li>You will see a control panel with options to start and stop services.</li>
+    </ul>
+
+    <h2>Start Apache and MySQL</h2>
+    <ul>
+        <li>In the XAMPP Control Panel, click the "Start" button next to Apache.</li>
+        <li>Click the "Start" button next to MySQL.</li>
+        <li>The module names should turn green, indicating that they are running.</li>
+    </ul>
+
+    <h2>Verify Installation</h2>
+    <ul>
+        <li>Open a web browser and type <code>http://localhost</code> in the address bar.</li>
+        <li>You should see the XAMPP welcome page, confirming that the installation was successful.</li>
+    </ul>
+
+    <h2>Test PHP and MySQL</h2>
+    <ul>
+        <li>Create a new file named <code>test.php</code> in the <code>C:\xampp\htdocs</code> folder.</li>
+        <li>Add the following PHP code to the file:
+            <pre>
+&lt;?php
+phpinfo();
+?&gt;
+            </pre>
+        </li>
+        <li>Save the file and open <code>http://localhost/test.php</code> in your web browser.</li>
+        <li>You should see the PHP information page, confirming that PHP is working correctly.</li>
+    </ul>
+</body>
+</html>
